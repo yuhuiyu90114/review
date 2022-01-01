@@ -21,11 +21,9 @@ for d in data:
 print(len(new))
 print(new[0])
 print(new[1])
-good = []
-for d in data:
-    if 'good' in d:
-        good.append(d)
+good =[ d for d in data if 'good' in d]
 print(len(good))
-print(good[0])
-print(good[1])
+bad1= [ d for d in data if 'bad' in d]
+print(len(bad1))
+bad2 = ['bad' in d for d in data ]
 
